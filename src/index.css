@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.options {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.options > * {
+  padding: 2px 0;
+}
+
+.options button {
+  width: 100px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.generate {
+  text-align: center;
+}
+
+.hero {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hero-container {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.hero-container span,
+.passwords li,
+button {
+  cursor: pointer;
+}
+
+.generate > button {
+  width: 210px;
+  height: 40px;
+  margin: 10px 0 0;
+  font-size: 20px;
+}
+
+.copy {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.passwords {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.passwords strong {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.passwords li {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 50%;
+}
+
+.passwords li:hover {
+  background-color: #eee;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 10px;
+  }
 }
